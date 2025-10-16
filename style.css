@@ -1,13 +1,13 @@
 /* Reset e variáveis CSS */
 :root {
-  --primary-color: #00f5ff;
-  --secondary-color: #ff006e;
-  --accent-color: #8338ec;
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #1a1a2e;
-  --bg-tertiary: #16213e;
-  --text-primary: #ffffff;
-  --text-secondary: #b3b3b3;
+  --primary-color: #ff6b35;
+  --secondary-color: #f72585;
+  --accent-color: #7209b7;
+  --bg-primary: #1a0d1a;
+  --bg-secondary: #2d1b2e;
+  --bg-tertiary: #3e2743;
+  --text-primary: #fff8f0;
+  --text-secondary: #d4a574;
   --neon-glow: 0 0 20px var(--primary-color), 0 0 40px var(--primary-color), 0 0 60px var(--primary-color);
   --border-radius: 12px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -21,7 +21,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  background: linear-gradient(135deg, #1a0d1a 0%, #2d1b2e 50%, #3e2743 100%);
   color: var(--text-primary);
   min-height: 100vh;
   overflow-x: hidden;
@@ -106,9 +106,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background: rgba(26, 26, 46, 0.8);
+  background: rgba(45, 27, 46, 0.8);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 245, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 107, 53, 0.3);
 }
 
 .logo {
@@ -310,16 +310,16 @@ body {
 .btn-primary {
   background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
   color: var(--bg-primary);
-  box-shadow: 0 4px 20px rgba(0, 245, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(0, 245, 255, 0.5);
+  box-shadow: 0 6px 30px rgba(255, 107, 53, 0.5);
 }
 
 .btn-secondary {
-  background: rgba(255, 0, 110, 0.2);
+  background: rgba(247, 37, 133, 0.2);
   color: var(--text-primary);
   border: 2px solid var(--secondary-color);
 }
@@ -340,9 +340,9 @@ body {
   display: flex;
   gap: 2rem;
   padding: 1.5rem;
-  background: rgba(22, 33, 62, 0.5);
+  background: rgba(62, 39, 67, 0.5);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(255, 107, 53, 0.2);
 }
 
 .stat-item {
@@ -399,7 +399,7 @@ body {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.1) 0%, transparent 70%);
   animation: aura 4s ease-in-out infinite;
   z-index: 1;
 }
@@ -416,14 +416,14 @@ body {
 }
 
 .speech-bubble {
-  background: rgba(26, 26, 46, 0.9);
+  background: rgba(45, 27, 46, 0.9);
   padding: 1rem 1.5rem;
   border-radius: 20px;
   border: 1px solid var(--primary-color);
   position: relative;
   max-width: 300px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 245, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
 }
 
 .speech-bubble::before {
@@ -443,8 +443,8 @@ body {
 .footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(26, 26, 46, 0.8);
-  border-top: 1px solid rgba(0, 245, 255, 0.3);
+  background: rgba(45, 27, 46, 0.8);
+  border-top: 1px solid rgba(255, 107, 53, 0.3);
   color: var(--text-secondary);
   font-size: 0.9rem;
 }
