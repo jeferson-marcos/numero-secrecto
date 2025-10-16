@@ -149,11 +149,11 @@ function criarParticula() {
 function adicionarFeedbackVisual(acertou) {
     const input = document.querySelector('.game-input');
     if (acertou) {
-        input.style.borderColor = '#00ff00';
-        input.style.boxShadow = '0 0 20px #00ff00';
+        input.style.borderColor = '#ff6b35';
+        input.style.boxShadow = '0 0 20px #ff6b35';
     } else {
-        input.style.borderColor = '#ff0066';
-        input.style.boxShadow = '0 0 20px #ff0066';
+        input.style.borderColor = '#f72585';
+        input.style.boxShadow = '0 0 20px #f72585';
     }
     
     setTimeout(() => {
