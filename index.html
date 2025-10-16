@@ -7,45 +7,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Jeferson Venceslau Marcos</title>
+    <title>Número Secreto | Game Futurista</title>
   </head>
 
   <body>
+    <!-- Particles background -->
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <!-- Main container -->
     <div class="container">
-      <div class="container__conteudo">
-        <div class="container__informacoes">
-          <div class="container__texto">
-            <h1>
-              Adivinhe o
-              <span class="container__texto-azul">número secreto aqui</span>
-            </h1>
-            <p class="texto__paragrafo">Escolha entre 1 a 50</p>
-          </div>
-          <input type="number" min="1" max="50" class="container__input" />
-          <div class="chute container__botoes">
-            <button onclick="verificarChute()" class="container__botao">
-              Chutar
-            </button>
-            <button
-              onclick="reiniciarJogo()"
-              id="reiniciar"
-              class="container__botao"
-              disabled
-            >
-              Novo Jogo
-            </button>
+      <!-- Header with animated title -->
+      <header class="header">
+        <div class="logo">
+          <i class="fas fa-brain"></i>
+          <span>Número Secreto</span>
+        </div>
+        <div class="score-board">
+          <div class="score-item">
+            <i class="fas fa-trophy"></i>
+            <span>Pontuação: <span id="score">0</span></span>
           </div>
         </div>
-        <img
-          src="./img/ia.png"
-          alt="Uma outra pessoa olhando para esquerda"
-          class="container__imagem-pessoa"
-        />
+      </header>
+
+      <!-- Game content -->
+      <div class="game-container">
+        <div class="game-content">
+          <div class="game-info">
+            <div class="title-section">
+              <h1 class="main-title">
+                <span class="title-line">Descubra o</span>
+                <span class="title-highlight">Número Secreto</span>
+              </h1>
+              <p class="subtitle">
+                <i class="fas fa-dice"></i>
+                Escolha um número entre <span class="range">1</span> e
+                <span class="range">50</span>
+              </p>
+            </div>
+
+            <div class="input-section">
+              <div class="input-wrapper">
+                <input
+                  type="number"
+                  min="1"
+                  max="50"
+                  class="game-input"
+                  placeholder="Digite seu palpite..."
+                />
+                <div class="input-decoration"></div>
+              </div>
+
+              <div class="button-group">
+                <button onclick="verificarChute()" class="btn btn-primary">
+                  <i class="fas fa-rocket"></i>
+                  <span>Chutar</span>
+                </button>
+                <button
+                  onclick="reiniciarJogo()"
+                  id="reiniciar"
+                  class="btn btn-secondary"
+                  disabled
+                >
+                  <i class="fas fa-redo"></i>
+                  <span>Novo Jogo</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="game-stats">
+              <div class="stat-item">
+                <i class="fas fa-bullseye"></i>
+                <span>Tentativas: <span id="attempts">0</span></span>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-clock"></i>
+                <span>Tempo: <span id="timer">00:00</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-character">
+            <div class="character-wrapper">
+              <img
+                src="./img/ia.png"
+                alt="Personagem IA"
+                class="character-image"
+              />
+              <div class="character-aura"></div>
+              <div class="speech-bubble" id="speechBubble">
+                <p>Bem-vindo ao desafio! Tente adivinhar meu número secreto!</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>
+          &copy; 2024 Número Secreto Game - Criado por Jeferson Venceslau Marcos
+        </p>
+      </footer>
     </div>
 
     <script src="app.js" defer></script>
