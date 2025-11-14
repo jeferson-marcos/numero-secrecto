@@ -86,7 +86,7 @@ docker-compose up -d
 
 # Ou usando Docker diretamente
 docker build -t numero-secreto .
-docker run -d -p 8080:80 --name numero-secreto-game numero-secreto
+docker run -d -p 8081:80 --name numero-secreto-game numero-secreto
 ```
 
 Acesse `http://localhost:8080` no navegador.
