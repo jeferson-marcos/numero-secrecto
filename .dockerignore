@@ -1,0 +1,35 @@
+# Arquivo de configuração para Docker
+# Ignorar arquivos desnecessários no build
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Documentação
+README.md
+
+# Logs
+*.log
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (caso adicione no futuro)
+node_modules/
+npm-debug.log*
+
+# Temporários
+*.tmp
+*.temp
