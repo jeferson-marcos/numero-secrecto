@@ -188,8 +188,6 @@ docker rm numero-secreto-game
 
 ## 👨‍💻 Desenvolvedor
 
-Criado com 💜 por **Jeferson Marcos**
-
 ---
 
 ### 📄 Licença
